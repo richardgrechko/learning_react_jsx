@@ -1,6 +1,9 @@
 // I converted shrinker into react.jsx, but I made it as a color upgrade. (i accidentally copied off revolution idle)
-function ColorUpgrade({ background: {`#fff`}, level: 0, rank: 0, production, strength, costIncrease: 1, initialCost })
+function ColorUpgrade({ background: {`#fff`}, level: 0, rank: 0, costIncrease: 1, production, strength, initialCost })
 {
+	this.production = production;
+	this.strength = strength;
+	this.initialCost = initialCost;
 	// btw.
 	this.getCost = function()
 	{
